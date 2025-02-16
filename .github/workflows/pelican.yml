@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
 jobs:
   deploy:
-    uses: "ahstewart/ahstewart.github.io/.github/workflows/github_pages.yml@main"
+    uses: "ahstewart/ahstewart.github.io/.github/workflows/pelican.yml@main"
     permissions:
       contents: "read"
       pages: "write"
