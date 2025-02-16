@@ -1,14 +1,2 @@
-name: Deploy to GitHub Pages
-on:
-  push:
-    branches: ["main"]
-  workflow_dispatch:
-jobs:
-  deploy:
-    uses: "ahstewart/ahstewart.github.io/.github/workflows/github_pages.yml@main"
-    permissions:
-      contents: "read"
-      pages: "write"
-      id-token: "write"
-    with:
-      settings: "publishconf.py"
+- name: GitHub Pages Pelican Build Action
+  uses: nelsonjchen/gh-pages-pelican-action@0.2.0
