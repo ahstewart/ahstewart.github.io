@@ -9,7 +9,7 @@
         <meta name="description" content="" />
 
 
-    <title>stuff I've built - Tags</title>
+    <title>stuff I've built - Articles by Andrew Stewart</title>
 
         <link rel="stylesheet" href="/theme/css/bootstrap.min.css" type="text/css" />
 
@@ -148,13 +148,56 @@
         <!-- Page Content -->
         <div id="page-content-wrapper">
             <div class="container-fluid">
-    <h2>Tags for stuff I've built</h2>
-    <ul>
-            <li><a href="/tag/astronomy.html">Astronomy</a> (1)</li>
-            <li><a href="/tag/image-processing.html">Image Processing</a> (1)</li>
-            <li><a href="/tag/optical-seti.html">Optical SETI</a> (1)</li>
-            <li><a href="/tag/python.html">Python</a> (1)</li>
-    </ul>
+<section id="content" class="body">
+    <div class="row">
+        <div class="col-lg-9">
+            <div class="jumbotron">  
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1>stuff I've built</h1>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-9">
+            <h2>Recent Articles:</h2>
+        </div>
+    </div>
+</section>
+<div class="row">
+    <div class="col-lg-9">
+            <article>
+                <h2>
+                    <a href="/oasis-a-newbies-attempt-to-automate-optical-seti.html">OASIS - A Newbie's Attempt to Automate Optical SETI</a>
+<div class="post-info">
+    <div class="publish-info-block">
+        <small>
+            <span class="published">
+                <i class="fa fa-calendar padding-small"></i><time datetime="2019-09-09T00:00:00-07:00"> Mon 09 September 2019</time>
+            </span>
+            <span class="category">
+                <i class="fa fa-folder-open padding-small"></i><a href="/category/astronomy.html">Astronomy</a>
+            </span>
+            <span class="tags">
+                <i class="fa fa-tags padding-small"></i>
+                <a href="/tag/astronomy.html">Astronomy</a> /                 <a href="/tag/python.html">Python</a> /                 <a href="/tag/image-processing.html">Image Processing</a> /                 <a href="/tag/optical-seti.html">Optical SETI</a>            </span>
+        </small>
+    </div>
+</div><!-- /.post-info -->                </h2>
+                <div class="summary">
+                    <p>Building an image processing pipeline in Python to subtract astronomical images from each other and detect transient events.</p>
+                </div>
+            </article>
+        <div class="btn-more text-right">
+            <a class="btn btn-default btn-xs twitchy-background" href="/archives.html">
+                View all Articles ...
+            </a>
+        </div>
+    </div>
+</div>
 <footer>
     <hr>
     <div class="row">
@@ -176,5 +219,22 @@
     <script src="/theme/js/bootstrap.min.js"></script>
     <!-- twitchy Script -->
     <script src="/theme/js/pelican_twitchy.min.js"></script>
+<script>
+    function FadeInOnScroll(ObjectList){
+        ObjectList.each(function(i) {
+            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+            if( bottom_of_window > bottom_of_object ){
+                $(this).fadeTo(750,1);
+            }
+        });
+    }
+    articles = $("article").fadeTo(0, 0.05);
+    FadeInOnScroll(articles)
+    $(window).scroll(function() {
+        FadeInOnScroll(articles)
+    });
+</script>
 </body>
 </html>

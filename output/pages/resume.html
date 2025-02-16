@@ -1,0 +1,397 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="author" content="Andrew Stewart" />
+        <meta name="description" content="Resume" />
+
+
+    <title>Resume - stuff I've built</title>
+
+        <link rel="stylesheet" href="/theme/css/bootstrap.min.css" type="text/css" />
+
+    <link href="/theme/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="/theme/css/pygments/native.css" rel="stylesheet" />
+    
+    <link href="/theme/css/pelican-twitchy.min.css" rel="stylesheet" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <!-- Feeds -->
+</head>
+<body data-spy="scroll" data-target="#scrollspy">
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper-small" class="twitchy-background">
+            <ul id="accordion-small" class="sidebar-nav sidebar-nav-small">
+                <li>
+        <a href="" title="stuff I've built" class="collapsed">
+            <span class="glyphicon glyphicon-home"></span>
+        </a>
+    </li>
+                <li class="nav-divider"></li>
+                <li>
+        <a href="/archives.html" title="Recent Articles" class="collapsed">
+            <span class="glyphicon glyphicon-th-list"></span>
+        </a>
+    </li>
+                
+                <li class="nav-divider"></li>
+                <li>
+                    <a data-toggle="collapse" data-parent="#accordion-small" href="#collapse-social-small" title="Social" class="collapsed">
+                        <i class="fa fa-users padding-small"></i>
+                    </a>
+                </li>
+                <li class="panel anti-panel"><ul id="collapse-social-small" class="collapse ">
+                    <li>
+                        <a href="#" title="Another social link"><i class="fa fa-another-social-link-square fa-lg padding-small"></i></a>
+                    </li>
+                    <li>
+                        <a href="#" title="You can add links in your config file"><i class="fa fa-you-can-add-links-in-your-config-file-square fa-lg padding-small"></i></a>
+                    </li>
+                </ul></li>
+                <li class="nav-divider"></li>
+                <li>
+        <a href="#" title="Back to top" class="collapsed">
+            <span class="fa fa-arrow-up"></span>
+        </a>
+    </li>
+            </ul>
+        </div>
+        <div id="sidebar-wrapper" class="twitchy-background">
+            <ul id="accordion" class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="/">
+                            <span class="glyphicon glyphicon-home padding-small"></span>
+                            stuff I've built
+                    </a>
+                </li>
+                    <li>
+                        <a href="/archives.html">
+                            <span class="glyphicon glyphicon-th-list padding-small"></span>
+                            Recent Articles
+                        </a>
+                    </li>
+                <li class="nav-divider"></li>
+                <li>
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse-social">
+                        <i class="fa fa-users padding-small"></i>
+                        Contact
+                    </a>
+                </li>
+                <li class="panel anti-panel"><ul id="collapse-social" class="sidebar_submenu collapse ">
+                    <li>
+                        <a href="#" title="Another social link">
+                            <i class="fa fa-another-social-link-square fa-lg padding-small"></i>
+                            Another social link
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="You can add links in your config file">
+                            <i class="fa fa-you-can-add-links-in-your-config-file-square fa-lg padding-small"></i>
+                            You can add links in your config file
+                        </a>
+                    </li>
+                </ul></li>
+                
+                <li class="nav-divider"></li>
+                <li>
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse-pages">
+                        <i class="fa fa-folder-open padding-small"></i>
+                        Pages
+                    </a>
+                </li>
+                <li class="panel anti-panel"><ul id="collapse-pages" class="sidebar_submenu collapse         in
+">
+                    <li class="active">
+                        <a href="/pages/resume.html">
+                            <i class="fa fa-file-text padding-small"></i>
+                            Resume
+                        </a>
+                    </li>
+                </ul></li>
+                
+                <li class="nav-divider"></li>
+                <li>
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse-categories">
+                        <i class="fa fa-folder-open padding-small"></i>
+                        Categories
+                    </a>
+                </li>
+                <li class="panel anti-panel"><ul id="collapse-categories" class="sidebar_submenu collapse ">
+                    <li >
+                        <a href="/category/astronomy.html">
+                            <i class="fa fa-folder-open padding-small"></i>
+                            Astronomy
+                            <span class="badge pull-right categorybadge">1</span>
+                        </a>
+                    </li>
+                </ul></li>
+                
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+        <!-- open/close sidebar -->
+        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">
+            <span id="right-arrow" class="glyphicon glyphicon-chevron-right"  title="expand sidebar"></span>
+            <span id="left-arrow" class="glyphicon glyphicon-chevron-left" title="minimize sidebar"></span>
+        </a>
+       <!-- /open/close sidebar -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+<div class="row">
+    <div class="col-lg-9">
+        <section id="content" class="body">
+            <h1 class="page-header">Resume</h1>
+            <div class="entry-content">
+                <p>%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.</p>
+<p>\documentclass[11pt,legalpaper,roman]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')</p>
+<p>% modern themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page</p>
+<p>% character encoding
+\usepackage[utf8]{inputenc}
+\usepackage{fontawesome}
+\usepackage{tabularx}
+\usepackage{ragged2e}
+% if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean</p>
+<p>% adjust the page margins
+\usepackage[scale=.9]{geometry}
+\usepackage{multicol}</p>
+<p>\usepackage{listings}
+\lstset{language=C,keywordstyle={\bfseries \color{blue}}}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,    <br>
+    urlcolor=cyan,}</p>
+<p>%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...</p>
+<p>\usepackage{import}</p>
+<p>% personal data
+\name{Andrew}{Stewart}
+% \title{Curriculum Vitae}                               % optional, remove / comment the line if not wanted
+\address{Redlands, CA}{}{}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+% \phone[mobile]{909-839-3097}                   % optional, remove / comment the line if not wanted
+% \phone[fixed]{01234 123456}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+% \email{xpan1@swarthmore.edu}                               % optional, remove / comment the line if not wanted
+% \homepage{shawnpan.me}                         % optional, remove / comment the line if not wanted
+% \extrainfo{}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted</p>
+<p>% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand<em _bibliographyitemlabel="\bibliographyitemlabel">{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand</em>{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS</p>
+<p>% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}</p>
+<p>\newcommand*{\customcventry}[7][.25em]{
+  \begin{tabular}{@{}l} 
+    {\bfseries #4}
+  \end{tabular}
+  \hfill% move it to the right
+  \begin{tabular}{l@{}}
+     {\bfseries #5}
+  \end{tabular} \
+  \begin{tabular}{@{}l} 
+    {\itshape #3}
+  \end{tabular}
+  \hfill% move it to the right
+  \begin{tabular}{l@{}}
+     {\itshape #2}
+  \end{tabular}
+  \ifx&#7;&amp;%
+  \else{\%
+    \begin{minipage}{\maincolumnwidth}%
+      \small#7%
+    \end{minipage}}\fi%
+  \par\addvspace{#1}}</p>
+<p>\newcommand*{\customcvproject}[4][.25em]{
+%   \vfill\noindent
+  \begin{tabular}{@{}l} 
+    {\bfseries #2}
+  \end{tabular}
+  \hfill% move it to the right
+  \begin{tabular}{l@{}}
+     {\itshape #3}
+  \end{tabular}
+  \ifx&#4;&amp;%
+  \else{\%
+    \begin{minipage}{\maincolumnwidth}%
+      \small#4%
+    \end{minipage}}\fi%
+  \par\addvspace{#1}}</p>
+<p>\setlength{\tabcolsep}{12pt}</p>
+<p>%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\vspace<em>{-10.5mm}
+%\begin{CJK</em>}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+\vspace*{-24mm}</p>
+<p>\begin{center}
+\begin{tabular}{ c c c c }
+ \faEnvelopeO\enspace ah.stewart@outlook.com &amp; \faGithub\enspace \href{https://github.com/ahstewart}{ahstewart} &amp;  \faMobile\enspace (951) 318-5180<br>
+\end{tabular}
+\end{center}</p>
+<p>\section{EXPERIENCE}</p>
+<p>{\customcventry{February 2024 - Present}{Product Manager - Analytics \&amp; Reporting}{Cayuse LLC}{Redlands, CA (Remote)}{}
+{\begin{itemize}
+  \item Responsible for the development and launch of a new suite of data analytics and reporting products.  \vspace<em 1mm>{1mm}
+  \item Launched first product (an analytics dashboard) in early 2024. The product has seen 15\% growth quarter over quarter since launch and will possess a positive contribution margin in its first year. 
+  \vspace</em>
+{\end{itemize}
+ }}
+{\customcventry{October 2022 - Present}{Product Manager - Proposals S2S}{Cayuse LLC}{Redlands, CA (Remote)}{}
+{\begin{itemize}
+  \item Owns the development and maintenance of the Proposals S2S product strategy, roadmap, and backlog, working with both customers and internal stakeholders to make informed decisions.  \vspace<em 1mm>{1mm}
+  \item Leads all team agile ceremonies and owns the product's release pipeline.  \vspace</em>
+  \item Since assuming the PM/PO role on the team:  \vspace<em 1mm>{1mm}
+    \begin{itemize}
+        \item Product has consistently boasted the highest NPS and ARR at the company.   \vspace</em>
+        \item Product software quality has increased quarter over quarter by an average of 9\%. (Quality here is an internal metric that is a function of support ticket rate, bug density, server downtime, and more).   \vspace<em 1mm>{1mm}
+        \item Product vision and strategy has been redefined and evangelized, obtaining alignment throughout the organization.   \vspace</em>
+        \item Product team has spearheaded effort to build out integrations with multiple Cayuse products and external services.  \vspace<em 1mm>{1mm}
+    \end{itemize}
+  \end{itemize}
+  \vspace</em>
+ }}
+{\customcventry{November 2021 - October 2022}{Product Owner}{Cayuse LLC}{Redlands, CA (Remote)}{}
+{\begin{itemize}
+  \item As PO for Cayuse's flagship SaaS product, Sponsored Projects, coordinated with the Product Manager and other internal stakeholders to define product epics, create user stories, and plan releases.  \vspace<em 1mm>{1mm}
+  \item Conducted weekly planning sessions to maintain and refine the team backlog.   \vspace</em>
+  \item Leveraged historical team data and various agile metrics to make intelligent decisions on backlog prioritization and PI/sprint planning.  \vspace<em 1mm>{1mm}
+  \item Oversaw the release of several major features over a 6 month period that solidified the product's standing in APAC markets.  \vspace</em>
+  \end{itemize}
+  \vspace<em 1mm>{1mm}
+ }}
+{\customcventry{May 2020 - November 2021}{Business Analyst}{iMedRIS Data Corporation}{Redlands, CA}{}
+{\begin{itemize}
+  \item Collaborated with Customer Success, Project Management, and Engineering teams to create feature requirement documentation and oversee feature development.  \vspace</em>
+  \item Acted as the company's Content Manager, which included overseeing the company's customer-facing Confluence site, writing and publishing technical manuals for more than 12 products, and developing release and patch notes.
+  \end{itemize}
+  \vspace<em 1mm>{1mm}
+ }
+ }
+{\customcventry{Aug 2018 - May 2020}{Founder}{4ear}{Redlands, CA}{}
+  {\begin{itemize}
+    \item Startup focused on leveraging machine learning techniques on audio data to make insightful inferences. Primary focus was on performing better fault detection on internal combustion engines.   \vspace</em>
+  \end{itemize}
+  }}</p>
+<p>\section{RESEARCH}</p>
+<p>{\customcvproject{Experimental Cosmology Lab -- University of California, Santa Barbara}{July 2017 - Sept 2019}
+  {\begin{itemize}
+    \item Lead researcher for the Experimental Cosmology Lab's Optical SETI team. Researched continuous-wave Optical SETI detection systems, specifically the software needed to make a cheap and robust system a reality.  \vspace<em 1mm>{1mm}
+    \item Developed and maintained \texttt{OasisPy}, a software package written in Python designed to search astronomical images for transient sources of light that may be indicative of an incident optical signal from some extraterrestrial civilization.
+  \end{itemize}
+  }}
+\vspace</em>
+{\customcvproject{Emory University Observatory -- Emory Department of Physics}{Sept 2016 – May 2018}
+{\begin{itemize}
+  \item As a student researcher working with PI Horace Dale, logged over 100 hours of observation time in Emory's in-house observatory. Duties included telescope programming and operation, data collection, and data processing.
+\end{itemize}
+}}</p>
+<p>\section{EDUCATION}
+{\customcventry{May 2018}{Bachelor of Science in Physics \&amp; Astronomy: GPA 3.51}{Emory University}{Atlanta, GA}{}{}}</p>
+<p>\section{SKILLS AND CERTIFICATIONS}</p>
+<p>{\customcvproject{Technical Skills}{}
+    {\begin{multicols}{4}
+     \begin{itemize}
+      \item Python
+      \item TensorFlow
+      \item Git
+      \item HTML, CSS, Javascript
+      \item SQL/PostgreSQL
+      \item Snowflake/Sigma
+      \item Swagger
+      \item Postman
+     \end{itemize}
+     \end{multicols}}
+     }
+\vspace<em 2.5mm>{2.5mm} 
+{\customcvproject{Agile Capabilities}{}
+    {\begin{multicols}{4}
+     \begin{itemize}
+      \item SAFe methodologies
+      \item Jira/Confluence
+      \item Aha!
+      \item SDLC
+     \end{itemize}
+     \end{multicols}}
+     }
+\vspace</em> 
+{\customcvproject{Certifications}{}
+    {\begin{itemize}
+        \vspace*{1mm}
+        \item Certified SAFe PM/PO (completed in April 2022)
+    \end{itemize}
+    }</p>
+<p>}
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}                        % 'publications' is the name of a BibTeX file</p>
+<p>% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file</p>
+<p>%-----       letter       ---------------------------------------------------------</p>
+<p>\end{document}</p>
+<p>%% end of file `template.tex'.</p>
+            </div>
+        </section>
+    </div>
+</div>
+<footer>
+    <hr>
+    <div class="row">
+        <div class="col-lg-9 text-center">
+            <p><small>
+                Built by <a href="http://docs.getpelican.com/en/latest">Pelican</a> / <a href="https://github.com/ingwinlu/pelican-twitchy">pelican-twitchy</a>
+                &middot;                    &copy; 2019 andrew stewart
+            </small></p>
+        </div>
+    </div>
+</footer>            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+    <!-- jQuery Version 1.11.2 -->
+    <script src="/theme/js/jquery-1.11.2.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/theme/js/bootstrap.min.js"></script>
+    <!-- twitchy Script -->
+    <script src="/theme/js/pelican_twitchy.min.js"></script>
+</body>
+</html>

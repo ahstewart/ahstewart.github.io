@@ -5,11 +5,10 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="author" content="andrew stewart" />
-        <meta name="description" content="" />
+    <meta name="keywords" content="Python" />
 
 
-    <title>stuff I've built - Tags</title>
+    <title>Python - stuff I've built</title>
 
         <link rel="stylesheet" href="/theme/css/bootstrap.min.css" type="text/css" />
 
@@ -148,13 +147,23 @@
         <!-- Page Content -->
         <div id="page-content-wrapper">
             <div class="container-fluid">
-    <h2>Tags for stuff I've built</h2>
-    <ul>
-            <li><a href="/tag/astronomy.html">Astronomy</a> (1)</li>
-            <li><a href="/tag/image-processing.html">Image Processing</a> (1)</li>
-            <li><a href="/tag/optical-seti.html">Optical SETI</a> (1)</li>
-            <li><a href="/tag/python.html">Python</a> (1)</li>
-    </ul>
+<div class="row">
+    <div class="col-lg-9">
+        <header class="page-header">
+            <h1>Articles featuring Python</h1>
+        </header>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-9">
+            <article>
+                <h4>
+                    <time datetime="2019-09-09T00:00:00-07:00"> Mon 09 September 2019</time>
+                    <a href="/oasis-a-newbies-attempt-to-automate-optical-seti.html">OASIS - A Newbie's Attempt to Automate Optical SETI</a>
+                </h4>
+            </article>
+    </div>
+</div>
 <footer>
     <hr>
     <div class="row">
@@ -176,5 +185,24 @@
     <script src="/theme/js/bootstrap.min.js"></script>
     <!-- twitchy Script -->
     <script src="/theme/js/pelican_twitchy.min.js"></script>
+<script>
+    function FadeInOnScroll(ObjectList){
+        ObjectList.each(function(i) {
+            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+            if( bottom_of_window > bottom_of_object ){
+                $(this).fadeTo(750,1);
+            }
+        });
+    }
+
+    articles = $("article").fadeTo(0, 0.05);
+    FadeInOnScroll(articles)
+
+    $(window).scroll(function() {
+        FadeInOnScroll(articles)
+    });
+</script>
 </body>
 </html>
