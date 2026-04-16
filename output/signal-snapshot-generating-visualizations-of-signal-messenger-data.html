@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>andrew stewart - under construction</title>
+	<meta name="description" content="">
+	<meta name="author" content="andrew stewart">
+
+	<!-- HTML5 shim, for IE6-8 support of HTML elements -->
+	<!--[if lt IE 9]>
+		<script src="/theme/html5.js"></script>
+	<![endif]-->
+
+	<!-- Styles -->
+	<link href="/theme/bootstrap.min.css" rel="stylesheet">
+	<link href="/theme/local.css" rel="stylesheet">
+	<link href="/theme/pygments.css" rel="stylesheet">
+
+	<!-- Feeds -->
+
+
+
+
+</head>
+<body>
+<a href="https://github.com/ahstewart"><img style="position: absolute; top: 39px; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png" alt="Fork me on GitHub" /></a>
+	<div class="topbar">
+	  <div class="topbar-inner">
+		<div class="container-fluid">
+		  <a class="brand" href="/">andrew stewart - under construction</a>
+			<ul class="nav">
+						<li><a href="/pages/about-me.html">About Me</a></li>
+						<li><a href="/pages/ideas.html">Ideas</a></li>
+						<li><a href="/pages/resume.html">Resume</a></li>
+					<li class="active"><a href="/category/analytics.html">Analytics</a></li>
+					<li ><a href="/category/astronomy.html">Astronomy</a></li>
+					<li ><a href="/category/machine-learning.html">Machine Learning</a></li>
+			</ul>
+			<p class="pull-right"><a href="/archives.html">[archives]</a> <a href="/tags.html">[tags]</a></p>
+		</div>
+	  </div>
+	</div>
+
+	<div class="container-fluid">
+	  <div class="sidebar">
+		<div class="well">
+			<h3>Blogroll</h3>
+			<ul>
+			</ul>
+			<div class="social">
+			<h3>Social</h3>
+			<ul>
+			</ul>
+			</div>
+		</div>
+	  </div>
+	  <div class="content">
+	<div class='article'>
+		<div class="page-header"><h1>Signal Snapshot - Generating visualizations of Signal Messenger data</h1></div>
+		<div class="well small">Permalink: <a class="more" href="/signal-snapshot-generating-visualizations-of-signal-messenger-data.html">2025-02-16 00:00:00-08:00</a>
+by <a class="url fn" href="/author/andrew-stewart.html">Andrew Stewart </a>
+ in <a href="/category/analytics.html">Analytics</a>
+tags: <a href="/tag/python.html">Python</a> <a href="/tag/machine-learning.html">Machine Learning</a> </div>
+		<div><h1>Question</h1>
+<p>Spotify Wrapped, and other similar products, are so fun for their audience because it provides <em>personalized</em> insights into something is used every day, but rarely analyzed. Chats, like music, are something we all interact with daily, which results in a ton of interesting data. But that data often isn't used for anything. It would be cool to build some analytics on top of someone's SIgnal conversations.</p>
+<p><strong>Question</strong>: How could an easy-to-use and shareable analytics tool be built for Signal users?</p>
+<h1>Methodology</h1>
+<p>For those unfamiliar, Signal is a messenger app, similar to WhatsApp, but heavily focused on privacy with their end-to-end encryption.</p>
+<p>I intiially started this project with the intention to build a bespoke, locally run dashboard that used my Signal Desktop database. I built a prototype of this in December 2024, which was a 100% Python app using the Dash/Plotly libraries to handle the data visualizations and Flask to serve it all up. </p>
+<p>It was rough, but it worked. I was able to fetch data from my local Signal database and create a few basic charts and KPIs. Things like: "Who sent the most messages in this conversation" and "what was every member's favorite emoji". Silly stuff to show the rest of the Signal peeps.</p>
+<p>To share it with the others in my Signal conversations, I used a hosting service to serve up my Python app. I think I used Heroku? In any case, I used a free version of their hosting offerings which allowed me to share the app via the web.</p>
+<p>All of this worked fine, but it wasn't scalable <em>at all</em>. And the farther I got into, the more I realized that other Signal users might like to build dashboards of their own.</p>
+<p>So a few months later, I decided to turn this Python app into a legitimate single-page web app that would allow any Signal user to generate an analytics dashboard on their data. I have very little FE web experience, so I relied <em>heavily</em> on LLMs to build the foundations of the React app.</p>
+<p>So here's what I have so far: signalsnapshot.com</p>
+<p>It's still pretty raw, but maybe some of you will find it fun.</p>
+<p>Important things to note:</p>
+<pre><code>This only supports Signal Desktop at the moment
+
+In order to use the tool, you need to first decrypt your Signal database. I also wrote a program to handle that, and the app has the necessary documentation on how to use it
+
+The app is purely client-side, meaning that your uploaded data never leaves your browser. There is no server, this is a static web page. Nobody but you can see your data.
+</code></pre>
+<p>If you're a Signal user and interested in this stuff, check it out! If there's enough demand, I'll build out the analytics a little more, and maybe add support for Signal Android. There’s a ton of meat left on this bone, chat analytics is a cool world.</p>
+<p>Here's the GitHub if you want to check out the code. https://github.com/ahstewart/signal-snapshot</p>
+<h3>Background</h3>
+<h3>The Project</h3>
+<h1>Results</h1>
+<h1>Takeaways</h1>
+<h1>Looking Forward</h1>
+<h1>Resources</h1></div>
+	</div>
+		<footer>
+		  <p>Powered by <a href="http://getpelican.com/">Pelican</a>. Theme based on <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a>.</p>
+		  <p>&copy; andrew stewart</p>
+		</footer>
+	  </div>
+
+	</div>
+</body>
+</html>
