@@ -39,7 +39,7 @@ AUTHOR_FEED_RSS = None
 
 DEFAULT_PAGINATION = 10
 
-THEME = "../pelican-themes/bootstrap"
+THEME = "pelican-themes/bootstrap"
 #PLUGINS = ["pelican_just_table"]
 
 # Uncomment following line if you want document-relative URLs when developing
