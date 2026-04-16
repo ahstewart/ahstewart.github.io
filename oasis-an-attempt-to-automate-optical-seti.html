@@ -32,6 +32,7 @@
 						<li><a href="/pages/about-me.html">About Me</a></li>
 						<li><a href="/pages/ideas.html">Ideas</a></li>
 						<li><a href="/pages/resume.html">Resume</a></li>
+					<li ><a href="/category/analytics.html">Analytics</a></li>
 					<li class="active"><a href="/category/astronomy.html">Astronomy</a></li>
 					<li ><a href="/category/machine-learning.html">Machine Learning</a></li>
 			</ul>
@@ -60,26 +61,26 @@
 by <a class="url fn" href="/author/andrew-stewart.html">Andrew Stewart </a>
  in <a href="/category/astronomy.html">Astronomy</a>
 tags: <a href="/tag/astronomy.html">Astronomy</a> <a href="/tag/python.html">Python</a> <a href="/tag/image-processing.html">Image Processing</a> <a href="/tag/optical-seti.html">Optical SETI</a> </div>
-		<div><h1>Question</h1>
+		<div><h1>What</h1>
 <p>Assuming that difference imaging is a viable method for detecting transient events of a ETI-nature, can I build a pipeline in Python to make this process accurate and efficient?</p>
 <h1>Methodology</h1>
-<p>Here's what I tried. It should be known that when I started this project, I was hardly much of a programmer, and even "hardlier" a SETI researcher. 
-I really knew very little about what I was doing. But as these things go, it was a great learning opportunity.</p>
+<p>Here's what I tried. It should be known that when I started this project, I was hardly much of a programmer, and even "hardlier" a SETI researcher. </p>
+<p>I really knew very little about what I was doing. But as these things go, it was a great learning opportunity.</p>
 <h3>Background</h3>
-<p>Before getting into the details, I'll quickly set the scene. It's 2016. I'm in my Sophomore year of college, and I was looking for a research project to undertake in the Summer. I had family in Santa Barbara, and knew
-how well-regarded UCSB's Physcis department was, so I looked into their active labs to find one that was doing something interesting.<br />
-The <a href="https://www.deepspace.ucsb.edu/">Experimental Cosmology Group</a>{:target="_blank"} was the first to catch my eye. They had a number of active projects in the works that seemed to combine both experimental and theoretical work quite nicely.
-As a student who really didn't know what he wanted to do, this breadth was attractive.
+<p>It's 2016. I'm in my Sophomore year of college, and I was looking for a research project to undertake in the Summer. I had family in Santa Barbara, and knew
+how well-regarded UCSB's Physcis department was, so I looked into their active labs to find one that was doing something interesting.  </p>
+<p>The <a href="https://www.deepspace.ucsb.edu/">Experimental Cosmology Group</a>{:target="_blank"} was the first to catch my eye. They had a number of active projects in the works that seemed to combine both experimental and theoretical work quite nicely.</p>
+<p>As a student who really didn't know what he wanted to do, this breadth was attractive.
 I reached out to Philip Lubin, the group's PI, and unlike most professors receiving a cold email from a undergrad Physics student, he responded quickly and set up a phone call.
-For such an established scientist, he was ridiculously patient and devoted when it came to education and outreach. He invited me to work on a SETI project for the summer, as there wasn't anybody focused on it at the time.<br />
-Again, it can't be overstated how unusual and cool this was. Few researchers would take the time to mentor a student from another college, with little experience, and give them access to their lab resources and group members.
-This was a fantastic opportunity, and I'll always be thankful to Dr. Lubin for facilitating it.</p>
+For such an established scientist, he was ridiculously patient and devoted when it came to education and outreach. He invited me to work on a SETI project for the summer, as there wasn't anybody focused on it at the time.  </p>
+<p>Again, it can't be overstated how unusual and cool this was. Few researchers would take the time to mentor a student from another college, with little experience, and give them access to their lab resources and group members.</p>
+<p>This was a fantastic opportunity, and I'll always be thankful to Dr. Lubin for facilitating it.</p>
 <h3>The Project</h3>
 <p>Okay, what was this SETI project all about?<br />
 Fundamentally, the focus of the SETI team at the Experimental Cosmology Group has been on <em>Optical SETI</em>. This is the branch of SETI
 dealing with the search for signals (and at times the broadcast of our own signals) in the optical range of the EM spectrum.<br />
-Optical SETI is, even in 2025, still relatively fringe with respect to the more popular SETI methods that search and broadcast in the longer wavelengths (think the classic arrays of radio telescope a la "Contact"). There are many reasons for this, mostly historical, and the story is interesting. There are lots of articles out there if you want to learn more, I won't go into it here.<br />
-Anyway, optical SETI searches can largely be split into two groups: pulsed and continuous. Pulsed involves looking for extremely short (temporally) burst of light coming from an observed source.
+Optical SETI is, even in 2025, still relatively fringe with respect to the more popular SETI methods that search and broadcast in the longer wavelengths (think the classic arrays of radio telescope a la "Contact"). There are many reasons for this, mostly historical, and the story is interesting. There are lots of articles out there if you want to learn more, I won't go into it here.  </p>
+<p>Anyway, optical SETI searches can largely be split into two groups: pulsed and continuous. Pulsed involves looking for extremely short (temporally) burst of light coming from an observed source.
 Pulsed searches are the more popular of the two because of the advantageous signal-to-noise ratio involved. Modern lasers are capable of producing extremely short pulses of light, on the nanosecond scale. In nature, however, significant signals in this time range are rare, making detection relatively straightforward. Lots of cool work has been done on pulsed searches.<br />
 But maybe an extraterrestrial civilization doesn't send a nanosecond pulsed signal. Maybe they instead output a directed, continuous beam of light. This kind of signal would be much harder to detect with the equipment and software used in the pulsed surveys.<br />
 Enter this project - a search for optical, continuous signal from an extraterrestrial civilization. Much of the theoretical ground-work was laid in <a href="http://wedge.deepspace.ucsb.edu/wordpress/wp-content/uploads/2015/04/SDI-u2.pdf">Dr. Lubin's original paper on the subject</a>{:target="_blank"}. The work I completed really just attempted to use some software and data to test the ideas that Lubin already had posited.  </p>
